@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SILab2Test" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-05-25T13:06:49" hostname="DESKTOP-DMPBC69" time="0.019">
+  <properties/>
+  <testcase name="TestMultipleCon()" classname="SILab2Test" time="0.016"/>
+  <testcase name="Test1()" classname="SILab2Test" time="0.001"/>
+  <testcase name="Test2()" classname="SILab2Test" time="0.001"/>
+  <testcase name="Test3()" classname="SILab2Test" time="0.001"/>
+  <testcase name="Test4()" classname="SILab2Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
