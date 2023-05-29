@@ -45,9 +45,9 @@
 23 - 24                                                                                                              
 24 – 25  
                                                                                                                                
-public class SILab2Test {                                                                                                
-    public List<User> createList(User... users){                                                                              
-        return new ArrayList<>(Arrays.asList(users)); }                                                                                                                                         @Test                                                                                                                               
+public class SILab2Test {                                                                                                                                          
+    public List<User> createList(User... users){                                                                                                                    
+        return new ArrayList<>(Arrays.asList(users)); }                                                                                                                                         @Test                                                                                                                                                                               
     void Test1()                                                                                                                       
     {                                                                                                                  
         User user=new User("user123",null,"user123@yahoo.com");                                                                                        
@@ -88,9 +88,11 @@ public class SILab2Test {
 1) F F F
 2) T X X
 3) F T X
-4) F F T
-   @Test
-    void TestMultipleCon ()
+4) F F T        
+  
+  
+   @Test                                                                                         
+    void TestMultipleCon ()                                         
     {
         User user=new User("username","password","user1@gmail.com");
         List<User> allUsers=createList();
