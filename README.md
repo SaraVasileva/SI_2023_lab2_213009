@@ -47,10 +47,7 @@
                                                                                                                                
 public class SILab2Test {                                                                                                
     public List<User> createList(User... users){                                                                              
-        return new ArrayList<>(Arrays.asList(users));                                                                         
-    }                                                                                                                    
-    // EVERY BRANCH                                                                                                              
-    @Test                                                                                                                               
+        return new ArrayList<>(Arrays.asList(users)); }                                                                                                                                         @Test                                                                                                                               
     void Test1()                                                                                                                       
     {                                                                                                                  
         User user=new User("user123",null,"user123@yahoo.com");                                                                                        
@@ -95,28 +92,25 @@ public class SILab2Test {
    @Test
     void TestMultipleCon ()
     {
-        // F F F
         User user=new User("username","password","user1@gmail.com");
         List<User> allUsers=createList();
         RuntimeException ex;
         assertDoesNotThrow(() -> SILab2.function(user,allUsers));
 
-        // T X X
+       
         User user1=new User(null,"password",null);
         ex=assertThrows(RuntimeException.class,() -> SILab2.function(user1,allUsers));
         assertTrue(ex.getMessage().contains("Mandatory information missing!"));
 
-        //F T X
+       
         User user2=new User("username",null,"email.com");
         ex=assertThrows(RuntimeException.class,() -> SILab2.function(user2,allUsers));
         assertTrue(ex.getMessage().contains("Mandatory information missing!"));
 
-        // F F T
+
         User user3=new User("username","password",null);
         ex=assertThrows(RuntimeException.class,() -> SILab2.function(user3,allUsers));
         assertTrue(ex.getMessage().contains("Mandatory information missing!"));
-
-
     }
 
 
