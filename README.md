@@ -83,7 +83,7 @@ public class SILab2Test {
     }
 
 
-### Тест случаи според критериумот Multiple Condition 
+### Тест случаи според критериумот Multiple Condition                                                                                      
 #### if (user==null || user.getPassword()==null || user.getEmail()==null)
 1) F F F
 2) T X X
@@ -91,13 +91,13 @@ public class SILab2Test {
 4) F F T        
   
   
-   @Test                                                                                         
-    void TestMultipleCon ()                                         
+   @Test                                                                                                                                                                                                
+    void TestMultipleCon ()                                                                                                                           
     {
-        User user=new User("username","password","user1@gmail.com");
-        List<User> allUsers=createList();
-        RuntimeException ex;
-        assertDoesNotThrow(() -> SILab2.function(user,allUsers));
+        User user=new User("username","password","user1@gmail.com");                                                                      
+        List<User> allUsers=createList();                                                                                               
+        RuntimeException ex;                                                                                                   
+        assertDoesNotThrow(() -> SILab2.function(user,allUsers));                                                                            
 
        
         User user1=new User(null,"password",null);
@@ -118,6 +118,5 @@ public class SILab2Test {
 
 ### Објаснување на напишаните Unit Tests                                                                                      
 Еvery Branch тестирањето треба да ги помине сите можни гранки во кодот.                                                                                              
-Multiple Condition тестирањето проверува даден if-услов и сите можни комбинации за да е исполнет и не исполнет условот.                                                 
-Tестирањето на Еvery Branch и Multiple Condition е напишано така што да се обезбеди целосна покриеност на патеките за извршување на кодот. Со напишаните тестови потврдуваме дека секое можно сценарио и точка на одлука во кодот се извршуваат правилно. Во тестовите користиме:                                                                                                    assertTrue - овој тест потврдува дека функцијата враќа true, доколку влезните аргументи се напишани како што треба,                                                                         assertFalse - овој тест потврдува дека функцијата враќа false, доколку влезните аргументи не се напишани како што треба,                                                                     assertThrow - овој тест потврдува дека функцијата прима не важечки влез, т.е фрла исклучок,                                                                                                  assertDoesNotThrow - овој тест потврдува дека кодот се извршува без да фрли исклучок.
+Multiple Condition тестирањето ги проверува сите комбинации за даден if-услов кој содржи логички оператоти, т.е да биде исполнет или да не биде.                                           Tестирањето на Еvery Branch и Multiple Condition е напишано така што да се обезбеди целосна покриеност на патеките за извршување на кодот. Со напишаните тестови потврдуваме дека секое можно сценарио и точка на одлука во кодот се извршуваат правилно. Во тестовите користиме:                                                                                                    assertTrue - овој тест потврдува дека функцијата враќа true, доколку влезните аргументи се напишани како што треба,                                                                         assertFalse - овој тест потврдува дека функцијата враќа false, доколку влезните аргументи не се напишани како што треба,                                                                     assertThrow - овој тест потврдува дека функцијата прима не важечки влез, т.е фрла исклучок,                                                                                                  assertDoesNotThrow - овој тест потврдува дека кодот се извршува без да фрли исклучок.
 
