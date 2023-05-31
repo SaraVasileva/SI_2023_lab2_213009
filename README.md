@@ -47,10 +47,10 @@
 23 - 24                                                                                                              
 24 – 25  
                                                                                                                                
-public class SILab2Test {                                                                                                                                          
-    public List<User> createList(User... users){                                                                                                                    
-        return new ArrayList<>(Arrays.asList(users)); }                                                                                                                                         @Test                                                                                                                                                                               
-    void Test1()                                                                                                                       
+public class SILab2Test {                                                                                                                                                                                                                                                                                  
+    public List<User> createList(User... users){                                                                                                                                                                                                                                                         
+        return new ArrayList<>(Arrays.asList(users)); }                                                                                                                                                          @Test                                                                                                                                                                                                                                                 
+    void Test1()                                                                                                                                                                                   
     {                                                                                                                  
         User user=new User("user123",null,"user123@yahoo.com");                                                                                        
         List<User> allUsers=createList(new User("user1", "password1", "user1@gmail.com"));                                                                           
